@@ -10,7 +10,6 @@ mindmap
                 (kontakt@bbwheroes.ch)
         [Own VPS]
             ("Runtipi <br/> (Application management)")
-                ("CodeX Docs <br/> (Documentation)")
                 ("Send <br/> (Temp file share)")
                 ("Plausible <br/> (Web Analytics)")
                 ("PrivateBin <br/> (Code snippet share)")
