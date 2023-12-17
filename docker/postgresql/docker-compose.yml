@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  postgres:
+    container_name: bbwhereos_postgresql
+    image: postgres:16-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - bbwheroes_postgresql:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD
+      - POSTGRES_USER=bbwheroes
+      - POSTGRES_DB=core
+
+volumes:
+    bbwheroes_postgresql:
