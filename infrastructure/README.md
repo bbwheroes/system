@@ -17,9 +17,8 @@ mindmap
                 ("IT Tools <br/> (Helpful tools)")
             (Docker)
                 ("Portainer <br/> (Container management)")
-                (Discord Bot)
                 (Website)
-                (Activity Compensator)
+                (Webhook Reciever)
                 ("PostgresSQL <br/> (Database)")
         [GitHub]
             (Code Repositories)
