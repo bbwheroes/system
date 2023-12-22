@@ -50,15 +50,3 @@ CREATE TABLE "dns_services" (
   "subdomain" varchar(255) UNIQUE NOT NULL,
   "to_github" bool NOT NULL
 );
-
-ALTER TABLE "projects" ADD FOREIGN KEY ("owner_id") REFERENCES "users" ("id");
-
-ALTER TABLE "proposals" ADD FOREIGN KEY ("project_id") REFERENCES "projects" ("id");
-
-ALTER TABLE "activities" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
-
-ALTER TABLE "portainer_machines" ADD FOREIGN KEY ("project_id") REFERENCES "projects" ("id");
-
-ALTER TABLE "portainer_machine_secrets" ADD FOREIGN KEY ("portainer_machine_id") REFERENCES "portainer_machines" ("id");
-
-ALTER TABLE "dns_services" ADD FOREIGN KEY ("project_id") REFERENCES "projects" ("id");
