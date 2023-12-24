@@ -9,10 +9,7 @@ services:
     volumes:
       - bbwheroes_postgresql:/var/lib/postgresql/data
       - .:/docker-entrypoint-initdb.d
-    environment:
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-bbwheroes}
-      - POSTGRES_USER=bbwheroes
-      - POSTGRES_DB=core
+    env_file: ./.docker.env
 
 volumes:
     bbwheroes_postgresql:
