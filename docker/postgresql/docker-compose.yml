@@ -10,6 +10,12 @@ services:
       - bbwheroes_postgresql:/var/lib/postgresql/data
       - .:/docker-entrypoint-initdb.d
     env_file: ./.docker.env
+    networks:
+      - bbwheroes
 
 volumes:
     bbwheroes_postgresql:
+
+networks:
+  bbwheroes:
+    external: true
