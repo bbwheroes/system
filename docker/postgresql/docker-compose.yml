@@ -1,11 +1,9 @@
 version: "3.9"
 
 services:
-  bbwhereos_postgresql:
-    container_name: bbwhereos_postgresql
+  bbwheroes_postgresql:
+    container_name: bbwheroes_postgresql
     image: postgres:16-alpine
-    ports:
-      - 5432:5432
     volumes:
       - bbwheroes_postgresql:/var/lib/postgresql/data
       - .:/docker-entrypoint-initdb.d
